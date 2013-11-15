@@ -61,9 +61,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
     <title>Description</title>
 
     <para>
-      <command>lxc-create</command> creates a system object where is
-      stored the configuration information and where can be stored
-      user information. The identifier <replaceable>name</replaceable>
+      <command>lxc-create</command> creates a system object where
+      configuration information is stored and where user information
+      can be stored. The identifier <replaceable>name</replaceable>
       is used to specify the container to be used with the different
       lxc commands.
     </para>
@@ -110,7 +110,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 	  <para>
 	    'template' is the short name of an existing 'lxc-template'
 	    script that is called by lxc-create,
-	    eg. busybox, debian, fedora, ubuntu or sshd.
+	    e.g. busybox, debian, fedora, ubuntu or sshd.
 	    Refer to the examples in <filename>@LXCTEMPLATEDIR@</filename>
 	    for details of the expected script structure.
 	    Alternatively, the full path to an executable template script
@@ -182,10 +182,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
         <term>The container already exists</term>
         <listitem>
           <para>
-	    As the message mention it, you try to create a container
-	    but there is a container with the same name. You can use
-	    the <command>lxc-ls -l</command> command to list the
-	    available containers on the system.
+	    As the message indicates, you tried to create a container
+	    with the name of an existing container. Names must be unique and
+	    you can use the <command>lxc-ls -l</command> command to list the
+	    existing containers on the system.
           </para>
         </listitem>
       </varlistentry>
